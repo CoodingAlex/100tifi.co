@@ -6,10 +6,10 @@ const Character = async () => {
   const character = await getData(id)
 
   const view = `
-    <div className="Characters-inner">
-      <article className="Characters-card">
+    <div class="Characters-inner">
+      <article class="Characters-card">
         <img src="${character.image}" alt="${character.name}" />
-        <h2>Name</h2>
+        <h2>${character.name}</h2>
       </article>
       <article class="Characters-card">
         <h3>Episodes:${character.episode.length}</h3>
